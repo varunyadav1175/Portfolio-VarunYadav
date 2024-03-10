@@ -1,0 +1,137 @@
+/* replace with your own fonts if need be */
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Source+Code+Pro");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Custom HTML & CSS Logo */
+#custom-logo {
+  font-family: "Reenie Beanie", cursive;
+}
+
+/* Mobile Behavior */
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: rgb(15, 23, 42);
+  }
+}
+
+@layer utilities {
+  .border-button-color {
+    --tw-border-opacity: 1;
+    border-color: rgb(67 5 186 / var(--tw-border-opacity));
+  }
+  .shadow-button-color {
+    --tw-shadow-color: #4305ba;
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+
+  .text-button-color {
+    --tw-text-opacity: 1;
+    color: rgb(67 5 186 / var(--tw-text-opacity));
+  }
+  .bg-button-color {
+    --tw-bg-opacity: 1;
+    background-color: rgb(67 5 186 / var(--tw-bg-opacity));
+  }
+
+  .loader {
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 140px;
+    background-image: linear-gradient(#fff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0);
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: 0 0, 40px 0, 80px 0, 120px 0;
+    animation: pgfill 1s linear infinite;
+  }
+
+  @keyframes pgfill {
+    0% {
+      background-image: linear-gradient(#fff 20px, transparent 0),
+        linear-gradient(#fff 20px, transparent 0),
+        linear-gradient(#fff 20px, transparent 0),
+        linear-gradient(#fff 20px, transparent 0);
+    }
+    25% {
+      background-image: linear-gradient(#ff3d00 20px, transparent 0),
+        linear-gradient(#fff 20px, transparent 0),
+        linear-gradient(#fff 20px, transparent 0),
+        linear-gradient(#fff 20px, transparent 0);
+    }
+    50% {
+      background-image: linear-gradient(#ff3d00 20px, transparent 0),
+        linear-gradient(#ff3d00 20px, transparent 0),
+        linear-gradient(#fff 20px, transparent 0),
+        linear-gradient(#fff 20px, transparent 0);
+    }
+    75% {
+      background-image: linear-gradient(#ff3d00 20px, transparent 0),
+        linear-gradient(#ff3d00 20px, transparent 0),
+        linear-gradient(#ff3d00 20px, transparent 0),
+        linear-gradient(#fff 20px, transparent 0);
+    }
+    100% {
+      background-image: linear-gradient(#ff3d00 20px, transparent 0),
+        linear-gradient(#ff3d00 20px, transparent 0),
+        linear-gradient(#ff3d00 20px, transparent 0),
+        linear-gradient(#ff3d00 20px, transparent 0);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dropdown-enter-active,
+  .dropdown-leave-active {
+    transition: all 0.3s ease-in;
+  }
+  .dropdown-enter-from,
+  .dropdown-leave-to {
+    transform: translateY(-5%);
+    transition: all 0.3s ease-in;
+
+    opacity: 0;
+  }
+  .dropdown-enter-to,
+  .dropdown-leave-from {
+    opacity: 1;
+  }
+}
+
+@keyframes blinking-rectangle {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.blinking-rectangle {
+  width: 0.6rem;
+  height: 1.2rem;
+  top: 18px;
+  left: 17px;
+  background-color: white;
+  animation: blinking-rectangle 1s infinite;
+}
