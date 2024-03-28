@@ -35,7 +35,7 @@ const Main = () => {
         <Content />
         <div className="relative flex-initial order-2 hidden col-span-1 text-center md:flex md:order-none">
           <p className="fixed transition-all duration-500 origin-top-right rotate-90 translate-y-0 bottom-2 right-10 motion-reduce:transition-none opacity-1">
-            📍 Based in Mumbai, India
+            📍 Based in Gurugram, India
           </p>
         </div>
         <footer className="order-last block mb-5 text-sm text-center md:hidden">
