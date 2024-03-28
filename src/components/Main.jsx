@@ -26,7 +26,7 @@ const Main = () => {
               </a>
             </li>
             <li className="transition-all duration-500 translate-y-0 motion-reduce:transition-none opacity-1">
-              <a href="mailto:varunyadav1175@gmail.com">Send email</a>
+              <a href="mailto:varunyadav1175@gmail.com" target="_blank"></a>
                 <SiGmail className="w-8 h-8 text-black transition duration-300 ease-out svg-inline--fa fa-linkedin md:h-12 md:w-12 hover:-translate-y-1 motion-reduce:hover:translate-y-0 dark:text-slate-300" />
               </a>
             </li>
