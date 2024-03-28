@@ -111,7 +111,7 @@ const Content = () => {
                 </p>
                 <div className="flex items-center space-x-6 text-slate-400">
                   {/* <a
-                    href="https://github.com/Bharat-bhandari/MindFAQ"
+                    href="https://github.com/varunyadav1175/MindFAQ"
                     className="flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color"
                     target="_blank"
                   >
@@ -172,7 +172,7 @@ const Content = () => {
                 <p className="text-slate-600">React, Javascript, HTML, CSS</p>
                 <div className="flex items-center space-x-6 text-slate-400 lg:justify-end">
                   <a
-                    href="https://github.com/Bharat-bhandari/React-Ecommerce-Web"
+                    href="https://github.com/varunyadav1175/React-Ecommerce-Web"
                     className="flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color"
                     target="_blank"
                   >
@@ -215,7 +215,7 @@ const Content = () => {
                 </p>
                 <div className="flex items-center space-x-6 text-slate-400">
                   <a
-                    href="https://github.com/Bharat-bhandari/MindFAQ"
+                    href="https://github.com/varunyadav1175/MindFAQ"
                     className="flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color"
                     target="_blank"
                   >
